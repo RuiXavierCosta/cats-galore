@@ -1,0 +1,23 @@
+.ignore-this-class{
+    color: rgba(206, 231, 230, 1); /* background */
+    color: rgba(174, 163, 176, 1);  /* secundary */
+    color: rgba(130, 112, 129, 1); /* primary */
+    color: rgba(173, 155, 170, 1);
+    color: rgba(204, 201, 220, 1);
+}
+
+body{
+    margin-top: 0px;
+    background-color: rgba(206, 231, 230, 1);
+    background-image: url("/src/imgs/checkered.png");
+}
+
+h1,h2,h3,h4{
+    font-family: 'Baloo Bhaina', cursive;
+
+}
+
+p{
+    font-family: 'Heebo', sans-serif;
+
+}

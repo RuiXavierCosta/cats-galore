@@ -1,0 +1,16 @@
+Main site :
+    ☐ 
+
+
+API info:
+    (http://thecatapi.com/docs.html)
+    Params:
+        api_key: string
+        image_id: string
+        format: xml / html / src
+        results_per_page: 1 to 100
+        type: jpg/png/gif
+        size : small = 250x, med=500x, full = full size
+    
+    /api/categories/list:
+        http://thecatapi.com/api/categories/list

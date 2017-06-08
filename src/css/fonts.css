@@ -1,0 +1,21 @@
+.big-title{
+    font-family: 'Modak', cursive;
+    font-size: 2.7em;
+    font-weight: normal;
+    color:rgba(130, 112, 129, 1);
+    display:inline-block;
+    margin: 0px 0px 4px 0;
+}
+
+.slogan{
+    color: rgba(174, 163, 176, 1);
+    margin: -18px 0px 0px 0px;
+}
+.wiskers{
+}
+
+@media screen and (max-width: 374px) {
+    .slogan {
+        font-size:20px;
+    }
+}
