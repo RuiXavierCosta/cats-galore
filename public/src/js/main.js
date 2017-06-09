@@ -14,7 +14,8 @@ $(document).ready(function () {
     win.scroll(function () {
         // End of the document reached?
         setTimeout(function () {
-            if ($(document).height() - win.height() == win.scrollTop()) {
+            if ($(document).height() - win.height() <= win.scrollTop() + 200) {
+
                 var newImg = document.createElement('img');
                 if (i % 10 === 0) {
                     newImg.setAttribute('src', api + gif_url + i + '/');
