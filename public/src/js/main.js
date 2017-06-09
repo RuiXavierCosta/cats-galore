@@ -1,5 +1,6 @@
-const api = 'http://thecatapi.com/api/';
-const image_url = 'images/get?format=src&type=png&size=small&results_per_page=';
+var api = 'http://thecatapi.com/api/';
+var image_url = 'images/get?format=src&type=jpg&size=med&results_per_page=';
+var gif_url = 'images/get?format=src&type=gif&size=med&results_per_page=';
 
 $(document).ready(function () {
 
@@ -12,13 +13,17 @@ $(document).ready(function () {
     // Each time the user scrolls
     win.scroll(function () {
         // End of the document reached?
-        setTimeout(() => {
+        setTimeout(function () {
             if ($(document).height() - win.height() == win.scrollTop()) {
-                const newImg = document.createElement('img');
-                newImg.setAttribute('src', api + image_url + i + '/');
+                var newImg = document.createElement('img');
+                if (i % 10 === 0) {
+                    newImg.setAttribute('src', api + gif_url + i + '/');
+                } else {
+                    newImg.setAttribute('src', api + image_url + i + '/');
+                }
                 newImg.classList.add('single-image');
 
-                const imgBoard = document.createElement('div');
+                var imgBoard = document.createElement('div');
                 imgBoard.classList.add('image-border');
                 imgBoard.append(newImg);
 
